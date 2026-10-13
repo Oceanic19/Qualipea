@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QualiPea" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/card_white</item>
+        <item name="colorSecondary">@color/brand_primary</item>
+        <item name="colorPrimaryDark">@color/cream_bg</item>
+
+        <item name="android:windowBackground">@color/cream_bg</item>
+        <item name="android:statusBarColor">@color/cream_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+        <item name="textAppearanceButton">@style/TextAppearance.QualiPea.Button</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.QualiPea.Subtitle</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.QualiPea.Caption</item>
+    </style>
+
+    <style name="FilterSectionLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="FeaturePill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_feature_pill</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.QualiPea.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+
+    <style name="TextAppearance.QualiPea.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+
+    <style name="TextAppearance.QualiPea.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+</resources>

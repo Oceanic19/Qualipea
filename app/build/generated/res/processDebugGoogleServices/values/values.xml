@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">542181871135</string>
+    <string name="google_api_key" translatable="false">AIzaSyDBpuIdi-OGI5Vfs9BBuuOY0lpHEDanh28</string>
+    <string name="google_app_id" translatable="false">1:542181871135:android:4b64cfba30214e14cd4f2a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDBpuIdi-OGI5Vfs9BBuuOY0lpHEDanh28</string>
+    <string name="google_storage_bucket" translatable="false">qualipea-68753.firebasestorage.app</string>
+    <string name="project_id" translatable="false">qualipea-68753</string>
+</resources>

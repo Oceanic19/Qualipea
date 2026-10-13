@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_border">#F0E2CC</color>
+    <color name="brand_cream">#FFF8EE</color>
+    <color name="brand_dark">#B04A0B</color>
+    <color name="brand_primary">#F0901E</color>
+    <color name="brand_shell">#3A1A08</color>
+    <color name="brand_text_secondary">#6E4F3A</color>
+    <color name="card_border">#F0E2CC</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="cream_bg">#FFF8EE</color>
+    <color name="delete_red">#B3261E</color>
+    <color name="nav_inactive">#A68A74</color>
+    <color name="neutral_gray">#8A8178</color>
+    <color name="neutral_gray_tint">#F5F1EB</color>
+    <color name="status_error">#B3261E</color>
+    <color name="status_good">#1E7A34</color>
+    <color name="text_dark">#3A1A08</color>
+    <color name="text_gray">#6E4F3A</color>
+    <color name="warm_border">#F0E2CC</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">QualiPea</string>
+    <string name="defective_count">\u203A 10 Defective</string>
+    <string name="device_connected">Device Connected</string>
+    <string name="device_ready">Raspberry Pi is ready.</string>
+    <string name="gcm_defaultSenderId" translatable="false">542181871135</string>
+    <string name="good_count">\u203A 32 Good</string>
+    <string name="google_api_key" translatable="false">AIzaSyDBpuIdi-OGI5Vfs9BBuuOY0lpHEDanh28</string>
+    <string name="google_app_id" translatable="false">1:542181871135:android:4b64cfba30214e14cd4f2a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDBpuIdi-OGI5Vfs9BBuuOY0lpHEDanh28</string>
+    <string name="google_storage_bucket" translatable="false">qualipea-68753.firebasestorage.app</string>
+    <string name="kernel_count">42 Kernels</string>
+    <string name="project_id" translatable="false">qualipea-68753</string>
+    <string name="ready_desc">Place the peanut kernels inside the imaging chamber to begin quality grading.</string>
+    <string name="ready_title">Ready To Grade?</string>
+    <string name="recent_scan">Recent Scan</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="tagline">Spanish Peanut Quality Grading</string>
+    <string name="view_details">View Details</string>
+    <style name="FeaturePill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_feature_pill</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FilterSectionLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+    <style name="TextAppearance.QualiPea.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+    <style name="TextAppearance.QualiPea.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+    <style name="TextAppearance.QualiPea.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+    </style>
+    <style name="Theme.QualiPea" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/card_white</item>
+        <item name="colorSecondary">@color/brand_primary</item>
+        <item name="colorPrimaryDark">@color/cream_bg</item>
+
+        <item name="android:windowBackground">@color/cream_bg</item>
+        <item name="android:statusBarColor">@color/cream_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="fontFamily">@font/nunito</item>
+        <item name="textAppearanceButton">@style/TextAppearance.QualiPea.Button</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.QualiPea.Subtitle</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.QualiPea.Caption</item>
+    </style>
+</resources>

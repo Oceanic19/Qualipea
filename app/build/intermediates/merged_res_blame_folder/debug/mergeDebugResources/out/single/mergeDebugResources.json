@@ -1,0 +1,474 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_card_amber.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_card_amber.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_stat_tile.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_stat_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_broken_kernel.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\broken_kernel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_filter_check.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_filter_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_defect_discolored.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\defect_discolored.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_pill.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_feature_pill.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_feature_pill.xml"
+    },
+    {
+        "merged": "com.hcdc.qualipea.app-debug-45:/layout_dialog_scan_results.xml.flat",
+        "source": "com.hcdc.qualipea.app-main-47:/layout/dialog_scan_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_dot_defect.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\dot_defect.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_recommendations.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_recommendations.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_dialog_confirm_delete.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\dialog_confirm_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_chevron_down.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_chevron_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_circle_green.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\circle_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_check_circle.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\font_nunito_extrabold.ttf.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\font\\nunito_extrabold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_card_mint.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_card_mint.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_scan_results.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_scan_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_defect_damaged.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\defect_damaged.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_sheet.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_dialog_scan_results.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\dialog_scan_results.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_sheet_history_filter.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\sheet_history_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_scan.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_shriveled_kernel.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\shriveled_kernel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_step_number.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_step_number.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_pagination.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_pagination.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_defect_recommendation.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_defect_recommendation.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\font_nunito_regular.ttf.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\font\\nunito_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_spec.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_spec.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_defect_selection.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_defect_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_trash_red.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_trash_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_bottom_nav.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\font_nunito.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\font\\nunito.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_page_current.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_page_current.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_defect_insect.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\defect_insect.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_dot_good.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\dot_good.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_hint_pill.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_hint_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_code.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_expand_more.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_expand_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\font_nunito_semibold.ttf.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\font\\nunito_semibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_circle_red.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\circle_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_defect_checkbox.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_defect_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_discolored_kernel.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\discolored_kernel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_chip_unselected.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_chip_unselected.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_tip.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_tip.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_note_card.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_note_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_refresh_btn.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_refresh_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_amber_box.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_amber_box.xml"
+    },
+    {
+        "merged": "com.hcdc.qualipea.app-debug-45:/layout_activity_scan.xml.flat",
+        "source": "com.hcdc.qualipea.app-main-47:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_moldy_kernel.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\moldy_kernel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_history.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_status_pill.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_status_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_dialog.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\font_nunito_bold.ttf.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\font\\nunito_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_page_btn.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_page_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_skeleton.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_skeleton.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_bar_track.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_bar_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_dot_reject.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\dot_reject.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_scan_skeleton.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_scan_skeleton.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_filter_option_selected.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_filter_option_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_circle_gray.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\circle_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_scan.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_circle_soft_red.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_circle_soft_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_filter_option.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_filter_option.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_defect_shriveled.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\defect_shriveled.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_blob.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_blob.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_check_circle2.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_check_circle2.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_pestdamage_kernel.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\pestdamage_kernel.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_warning_circle.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_warning_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_scan_detail.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_scan_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_chip_selected.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_chip_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_sheet_handle.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_sheet_handle.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_defect_moldy.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\defect_moldy.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_step.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_step.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_outline_button.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_outline_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_bg_thumb.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\bg_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_logo_peanut.png.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\logo_peanut.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_scan_history.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_scan_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_overlay_image_viewer.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\overlay_image_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_activity_options.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\activity_options.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_item_scan_home.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\item_scan_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-debug-45:\\layout_dialog_defect_example.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.hcdc.qualipea.app-main-47:\\layout\\dialog_defect_example.xml"
+    }
+]

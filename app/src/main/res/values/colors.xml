@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand palette -->
+    <color name="brand_dark">#B04A0B</color> <!-- Idk where I will use this one, I dont see it in my vision -->
+    <color name="brand_primary">#F0901E</color>  <!-- Positive Indicator -->
+    <color name="brand_shell">#3A1A08</color>  <!-- Headers/Primary Text -->
+    <color name="brand_cream">#FFF8EE</color>  <!-- Background -->
+    <color name="brand_text_secondary">#6E4F3A</color> <!-- Descriptions, supporting labels -->
+    <color name="brand_border">#F0E2CC</color> <!-- card outlines/dividers -->
+
+    <!-- Backgrounds and surfaces -->
+    <color name="cream_bg">#FFF8EE</color>
+    <color name="card_white">#FFFFFF</color> <!-- Cards -->
+    <color name="white">#FFFFFF</color>
+    <color name="card_border">#F0E2CC</color>
+    <color name="warm_border">#F0E2CC</color>
+
+    <!-- Text and navigation -->
+    <color name="text_dark">#3A1A08</color>
+    <color name="text_gray">#6E4F3A</color>
+    <color name="nav_inactive">#A68A74</color>
+
+    <!-- Status and feedback -->
+    <color name="status_good">#1E7A34</color>
+    <color name="status_error">#B3261E</color>
+    <color name="delete_red">#B3261E</color>
+
+    <!-- Neutral states -->
+    <color name="neutral_gray">#8A8178</color>
+    <color name="neutral_gray_tint">#F5F1EB</color>
+
+</resources>

@@ -135,7 +135,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Good Quality"
-                        android:textColor="@color/brand_primary"
+                        android:textColor="@color/status_good"
                         android:textStyle="bold"
                         android:textSize="14sp" />
 

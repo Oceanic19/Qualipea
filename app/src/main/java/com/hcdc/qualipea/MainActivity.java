@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Real data: restore the normal colors.
-        barGood.setBackgroundColor(getResources().getColor(R.color.brand_primary));
+        barGood.setBackgroundColor(getResources().getColor(R.color.status_good));
         dotGood.setBackgroundTintList(null);
         dotDefect.setBackgroundTintList(null);
 
@@ -298,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int gradeColor(String grade) {
         if ("Reject".equalsIgnoreCase(grade)) return getResources().getColor(R.color.delete_red);
-        if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_dark);
+        if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_primary);
         return getResources().getColor(R.color.brand_primary);
     }
 

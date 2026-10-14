@@ -433,7 +433,7 @@ public class ScanActivity extends AppCompatActivity {
                 "%d kernels \u2022 %.2f%% defect rate", defect, defectRate));
 
         if ("Reject".equalsIgnoreCase(grade)) {
-            tvGrade.setTextColor(getResources().getColor(R.color.delete_red));
+            tvGrade.setTextColor(getResources().getColor(R.color.brand_primary));
         }
 
         dialog.findViewById(R.id.btnDialogScanAgain).setOnClickListener(v -> {

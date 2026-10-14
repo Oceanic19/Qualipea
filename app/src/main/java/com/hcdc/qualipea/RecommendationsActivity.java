@@ -68,7 +68,7 @@
 
         private int gradeColor() {
             if ("Reject".equalsIgnoreCase(grade)) return getResources().getColor(R.color.delete_red);
-            if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_dark);
+            if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_primary);
             return getResources().getColor(R.color.brand_primary);
         }
 
@@ -155,13 +155,17 @@
         }
 
         private void bindDefectRate() {
+            // Reject = red, everything else = green
+            int rateColor = getResources().getColor(
+                    "Reject".equalsIgnoreCase(grade) ? R.color.delete_red : R.color.status_good);
+
             TextView tvDefectRate = findViewById(R.id.tvDefectRate);
             tvDefectRate.setText(String.format(Locale.US, "%.2f%%", defectRate));
-            tvDefectRate.setTextColor(gradeColor());
+            tvDefectRate.setTextColor(rateColor);
 
             ProgressBar bar = findViewById(R.id.rateBar);
             bar.setProgress((int) (Math.min(defectRate, 20.0) * 10)); // bar is full at 20%
-            bar.setProgressTintList(ColorStateList.valueOf(gradeColor()));
+            bar.setProgressTintList(ColorStateList.valueOf(rateColor));
         }
 
         private void setUpPriceCalculator() {

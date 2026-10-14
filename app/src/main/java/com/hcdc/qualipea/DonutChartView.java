@@ -35,7 +35,7 @@ public class DonutChartView extends View {
 
     public DonutChartView(Context c, AttributeSet a) {
         super(c, a);
-        goodColor = ContextCompat.getColor(c, R.color.brand_primary);
+        goodColor = ContextCompat.getColor(c, R.color.status_good);
         defectColor = ContextCompat.getColor(c, R.color.delete_red);
 
         track.setStyle(Paint.Style.STROKE);

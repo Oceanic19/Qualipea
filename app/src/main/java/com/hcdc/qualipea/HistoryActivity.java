@@ -17,6 +17,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.res.ColorStateList;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -232,6 +234,13 @@ public class HistoryActivity extends AppCompatActivity {
 
         boolean moreActive = activeFilter != Filter.ALL && activeFilter != Filter.TODAY;
         styleChip(chipMore, moreActive);
+// Grade filters tint the chip with the grade's color. Every other state clears the
+// tint, so the chip keeps its normal brand_primary / white look.
+        if (moreActive && gradeOf(activeFilter) != null) {
+            chipMore.setBackgroundTintList(ColorStateList.valueOf(filterColor(activeFilter)));
+        } else {
+            chipMore.setBackgroundTintList(null);
+        }
         chipMore.setText(moreActive
                 ? chipLabel(activeFilter) + "  \u2022\u2022\u2022"
                 : "\u2022\u2022\u2022");
@@ -280,18 +289,21 @@ public class HistoryActivity extends AppCompatActivity {
         View row = LayoutInflater.from(this).inflate(R.layout.item_filter_option, parent, false);
         TextView label = row.findViewById(R.id.tvOptionLabel);
         View dot = row.findViewById(R.id.viewOptionDot);
-        View check = row.findViewById(R.id.ivOptionCheck);
+        ImageView check = row.findViewById(R.id.ivOptionCheck);
 
         label.setText(filterLabel(f));
         if (dotRes != 0) {
             dot.setBackgroundResource(dotRes);
             dot.setVisibility(View.VISIBLE);
+            dot.setBackgroundTintList(ColorStateList.valueOf(filterColor(f)));
         }
 
         if (activeFilter == f) {
+            int accent = filterColor(f);   // grade color for grades, brand_primary for the rest
             row.setBackgroundResource(R.drawable.bg_filter_option_selected);
-            label.setTextColor(getResources().getColor(R.color.brand_primary));
+            label.setTextColor(accent);
             label.setTypeface(label.getTypeface(), Typeface.BOLD);
+            check.setImageTintList(ColorStateList.valueOf(accent));
             check.setVisibility(View.VISIBLE);
             row.setSelected(true);
         }
@@ -472,13 +484,30 @@ public class HistoryActivity extends AppCompatActivity {
 
     private int gradeColor(String grade) {
         if ("Reject".equalsIgnoreCase(grade)) return getResources().getColor(R.color.delete_red);
-        if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_dark);
-        return getResources().getColor(R.color.brand_primary);
+        if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_primary);
+        return getResources().getColor(R.color.status_good);
+    }
+
+    /** The grade a filter stands for, or null if it isn't a grade filter. */
+    private String gradeOf(Filter f) {
+        switch (f) {
+            case EXTRA:  return "Extra Class";
+            case CLASS1: return "Class I";
+            case CLASS2: return "Class II";
+            case REJECT: return "Reject";
+            default:     return null;
+        }
+    }
+
+    /** Active color: the grade's own color for grade filters, brand_primary for everything else. */
+    private int filterColor(Filter f) {
+        String g = gradeOf(f);
+        return g != null ? gradeColor(g) : getResources().getColor(R.color.brand_primary);
     }
 
     private int gradeTint(String grade) {
-        if ("Reject".equalsIgnoreCase(grade)) return getResources().getColor(R.color.delete_red);
-        if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_dark);
+        if ("Reject".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_primary);
+        if ("Class II".equalsIgnoreCase(grade)) return getResources().getColor(R.color.brand_primary);
         return getResources().getColor(R.color.brand_primary);
     }
 
@@ -499,7 +528,7 @@ public class HistoryActivity extends AppCompatActivity {
         tvTitle.setBackgroundTintList(
                 android.content.res.ColorStateList.valueOf(color)
         );
-        accent.setBackgroundColor(color);
+        accent.setBackgroundColor(gradeTint(record.grade));
 
         tvDate.setText(dateFmt.format(record.timestampMillis));
         tvKernels.setText(record.total + " kernels");

@@ -250,7 +250,7 @@ public class HistoryActivity extends AppCompatActivity {
     }
 
     // ------------------------------------------------------------------
-    // Filter bottom sheet (the ••• button)
+    // Filter bottom sheet (the ••• button)--
     // ------------------------------------------------------------------
 
     private void showFilterSheet() {

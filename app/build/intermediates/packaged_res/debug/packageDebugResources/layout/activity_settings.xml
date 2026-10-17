@@ -283,7 +283,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:lineSpacingMultiplier="1.2"
-                        android:text="\u2022 [Asakil, Norman B.]\n\u2022 [Gonzales, Daniella A.]\n\u2022 [Jiminez, Kiesha Mae C.]\n\u2022 [Simo, Melgen, II A.]"
+                        android:text="\u2022 [Asakil, Norman B.]\n\u2022 [Gonzales, Daniella A.]\n\u2022 [Jimenez, Kiesha Mae C.]\n\u2022 [Simo, Melgen, II A.]"
                         android:textColor="@color/text_dark"
                         android:textSize="14sp" />
 

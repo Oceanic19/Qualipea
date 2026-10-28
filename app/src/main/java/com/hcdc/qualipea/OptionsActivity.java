@@ -1,12 +1,13 @@
+
 package com.hcdc.qualipea;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.button.MaterialButton;
 
-/** Shown after Splash when no user is currently signed in. */
 public class OptionsActivity extends AppCompatActivity {
 
     @Override
@@ -14,19 +15,23 @@ public class OptionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
 
-        MaterialButton btnSignIn = findViewById(R.id.btnSignIn);
-        MaterialButton btnSignUp = findViewById(R.id.btnSignUp);
+        MaterialButton btnProceed = findViewById(R.id.btnProceed);
 
-        btnSignIn.setOnClickListener(v -> startActivity(new Intent(this, LoginActivity.class)));
-        btnSignUp.setOnClickListener(v -> startActivity(new Intent(this, SignupActivity.class)));
+        btnProceed.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    OptionsActivity.this,
+                    MainActivity.class
+            );
+            startActivity(intent);
+        });
 
         UiAnim.staggerIn(
                 findViewById(R.id.cardLogo),
                 findViewById(R.id.tvBrand),
                 findViewById(R.id.tvTagline),
                 findViewById(R.id.rowPills),
-                btnSignUp,
-                btnSignIn,
-                findViewById(R.id.tvFooter));
+                btnProceed,
+                findViewById(R.id.tvFooter)
+        );
     }
 }

@@ -84,8 +84,9 @@
 
         <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.2" />
 
+
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnProceed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="0dp"
@@ -94,30 +95,13 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:stateListAnimator="@null"
-            android:text="Create Account"
+            android:text="Proceed Now"
             android:textAllCaps="false"
             android:textColor="@color/card_white"
             android:textStyle="bold"
             app:backgroundTint="@color/brand_primary"
             app:cornerRadius="14dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSignIn"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:text="Login"
-            android:textAllCaps="false"
-            android:textColor="@color/brand_primary"
-            android:textStyle="bold"
-            app:cornerRadius="14dp"
-            app:strokeColor="@color/brand_primary"
-            app:strokeWidth="1.5dp" />
 
         <TextView
             android:id="@+id/tvFooter"

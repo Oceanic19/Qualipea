@@ -95,7 +95,7 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:stateListAnimator="@null"
-            android:text="Proceed Now"
+            android:text="Start Now"
             android:textAllCaps="false"
             android:textColor="@color/card_white"
             android:textStyle="bold"

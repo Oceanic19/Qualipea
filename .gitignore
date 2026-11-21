@@ -1,0 +1,33 @@
+
+# Gradle
+.gradle/
+**/build/
+
+# Local Android SDK configuration
+local.properties
+
+# Android Studio temporary files
+.idea/caches/
+.idea/libraries/
+.idea/shelf/
+.idea/workspace.xml
+.idea/deviceStreaming.xml
+
+# Compiled files
+*.class
+*.dex
+*.apk
+*.aab
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Native build outputs
+.externalNativeBuild/
+.cxx/
+
+# Captures
+captures/

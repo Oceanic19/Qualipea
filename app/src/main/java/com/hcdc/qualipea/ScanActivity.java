@@ -99,6 +99,7 @@ public class ScanActivity extends AppCompatActivity {
 
 
         NavHelper.setup(this, findViewById(R.id.bottomNav), NavHelper.Tab.SCAN);
+        NavHelper.handleBackToHome(this);
         renderState();
     }
 

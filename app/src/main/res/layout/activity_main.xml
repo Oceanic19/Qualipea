@@ -6,11 +6,6 @@
     android:orientation="vertical"
     android:background="@color/cream_bg">
 
-    <!-- fillViewport makes the content as tall as the screen, so the weighted
-         spacers below share any spare space EQUALLY:
-           Your Activity -> Recent Activity -> Ready To Grade -> nav bar.
-         (The Pi status pill stays close to Your Activity: no spacer there.)
-         On very short screens the spacers shrink to 0 and the page scrolls. -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -60,7 +55,7 @@
                 android:textSize="14sp"
                 android:layout_marginBottom="8dp" />
 
-            <!-- Slim Pi status -->
+            <!-- Raspberry Pi status -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,7 +84,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Your Activity (fixed 12dp below the Pi pill, no spacer) -->
+            <!-- Your Activity -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardActivity"
                 android:layout_width="match_parent"
@@ -114,7 +109,7 @@
                         android:textStyle="bold"
                         android:layout_marginBottom="10dp" />
 
-                    <!-- Two tiles: Total scans (left) + Kernels analyzed (right) -->
+                    <!-- Statistics -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -179,15 +174,13 @@
                         </LinearLayout>
                     </LinearLayout>
 
-                    <!-- Kernel Quality: good vs defective across all scans.
-                         No box, just its own section. Hidden until there is a scan. -->
+                    <!-- Kernel Quality -->
                     <LinearLayout
                         android:id="@+id/activityBreakdown"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_marginTop="16dp"
-                        >
+                        android:layout_marginTop="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -289,13 +282,344 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- SPACER A: Your Activity -> Recent Activity -->
+            <!-- Peanut Quality Reference Guide -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReferenceGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/card_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peanut Classes Reference Guide"
+                        android:textColor="@color/text_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Browse sample kernel appearances for each quality category."
+                        android:textColor="@color/text_gray"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Extra Class -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_stat_tile"
+                        android:padding="12dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Class"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivExtraClass"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/logo_peanut"
+                            android:contentDescription="Extra Class sample image" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnExtraPrev"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Previous"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+
+                            <TextView
+                                android:id="@+id/tvExtraCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/4"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnExtraNext"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Next"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Class I -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_stat_tile"
+                        android:padding="12dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class I"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivClassOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/broken_kernel"
+                            android:contentDescription="Class I sample image" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnClassOnePrev"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Previous"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+
+                            <TextView
+                                android:id="@+id/tvClassOneCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/4"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnClassOneNext"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Next"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Class II -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_stat_tile"
+                        android:padding="12dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class II"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivClassTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/discolored_kernel"
+                            android:contentDescription="Class II sample image" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnClassTwoPrev"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Previous"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+
+                            <TextView
+                                android:id="@+id/tvClassTwoCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/4"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnClassTwoNext"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Next"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Defected -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_stat_tile"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Defected"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivDefected"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/moldy_kernel"
+                            android:contentDescription="Defected sample image" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="8dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnDefectedPrev"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Previous"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+
+                            <TextView
+                                android:id="@+id/tvDefectedCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1/4"
+                                android:textColor="@color/text_dark"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnDefectedNext"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:text="Next"
+                                android:textAllCaps="false"
+                                android:textColor="@color/brand_primary"
+                                android:minHeight="40dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Note: Images are temporary visual placeholders and are not official grading standards."
+                        android:textColor="@color/text_gray"
+                        android:textSize="11sp"
+                        android:layout_marginTop="12dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Spacer: Reference Guide -> Recent Activity -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.75" />
+                android:layout_weight="0.35" />
 
-            <!-- Recent Activity: ONE card, title inside, latest scan + View all history -->
+            <!-- Recent Activity -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardRecent"
                 android:layout_width="match_parent"
@@ -365,13 +689,13 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- SPACER B: Recent Activity -> Ready To Grade -->
+            <!-- Spacer: Recent Activity -> Ready To Grade -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.75" />
 
-            <!-- Ready To Grade (now part of the even spacing) -->
+            <!-- Ready To Grade -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardReady"
                 android:layout_width="match_parent"
@@ -424,11 +748,12 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- SPACER C: Ready To Grade -> nav bar (the space taken from the Pi pill) -->
+            <!-- Bottom spacing -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.50" />
+
         </LinearLayout>
     </ScrollView>
 

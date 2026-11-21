@@ -93,6 +93,7 @@ public class HistoryActivity extends AppCompatActivity {
         scroll.setOnScrollChangeListener((v, x, y, ox, oy) -> revealVisible());
 
         NavHelper.setup(this, findViewById(R.id.bottomNav), NavHelper.Tab.HISTORY);
+        NavHelper.handleBackToHome(this);
 
         startMillis = System.currentTimeMillis();
         showSkeleton();

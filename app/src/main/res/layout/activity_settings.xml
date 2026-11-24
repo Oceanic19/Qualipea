@@ -34,8 +34,6 @@
                 android:textColor="@color/text_gray"
                 android:textSize="14sp" />
 
-            <!-- Specifications -->
-            <!-- Specifications (tap header to expand/collapse) -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardSpecs"
                 android:layout_width="match_parent"
@@ -137,7 +135,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Troubleshooting guide (tap header to expand/collapse) -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardTroubleshoot"
                 android:layout_width="match_parent"
@@ -225,7 +222,6 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- About us -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardAbout"
                 android:layout_width="match_parent"
@@ -267,7 +263,6 @@
                         android:textSize="11sp"
                         android:textStyle="bold" />
 
-                    <!-- EDIT: your group name -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -277,7 +272,6 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <!-- EDIT: your group mates -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -287,7 +281,6 @@
                         android:textColor="@color/text_dark"
                         android:textSize="14sp" />
 
-                    <!-- EDIT: school / course / year -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -308,7 +301,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <include layout="@layout/bottom_nav" android:id="@+id/bottomNav" />
-
 </LinearLayout>

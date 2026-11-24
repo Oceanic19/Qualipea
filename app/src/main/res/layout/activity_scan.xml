@@ -7,6 +7,8 @@
     android:orientation="vertical"
     android:background="@color/cream_bg">
 
+    <include layout="@layout/header" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -32,7 +34,6 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="16dp" />
 
-        <!-- Live camera feed from the Pi's /video MJPEG stream -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -44,8 +45,7 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#000000"
-                >
+                android:background="#000000">
 
                 <WebView
                     android:id="@+id/webViewStream"
@@ -86,8 +86,7 @@
                     android:textColor="#E6D5C0"
                     android:textSize="13sp"
                     android:gravity="center"
-                    android:visibility="gone"
-                    />
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/tvOverlay"
@@ -139,7 +138,6 @@
 
     </LinearLayout>
 
-    <!-- Bottom action panel -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -203,7 +201,6 @@
             app:backgroundTint="@color/brand_primary"
             app:cornerRadius="10dp" />
 
-        <!-- Shown after a scan is complete -->
         <LinearLayout
             android:id="@+id/layoutResultButtons"
             android:layout_width="match_parent"
@@ -245,6 +242,8 @@
 
     </LinearLayout>
 
-    <include layout="@layout/bottom_nav" android:id="@+id/bottomNav" />
+    <include
+        android:id="@+id/bottomNav"
+        layout="@layout/bottom_nav" />
 
 </LinearLayout>

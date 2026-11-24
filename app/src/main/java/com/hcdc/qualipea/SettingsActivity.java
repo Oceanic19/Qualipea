@@ -1,4 +1,3 @@
-
 package com.hcdc.qualipea;
 
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    // {step text, optional command shown in a code box}
     private static final String[][] STEPS = {
             {"Plug the ethernet cable of the imaging chamber into your laptop.", null},
             {"Switch on the power of the Raspberry Pi and wait about a minute for it to boot.", null},
@@ -25,7 +23,6 @@ public class SettingsActivity extends AppCompatActivity {
             {"Go back to the Scan page. You can now grade freely!", null},
     };
 
-    // {name, detail}
     private static final String[][] HARDWARE = {
             {"Raspberry Pi 4", "Quad-core ARM processor • controls the imaging device and talks to the app"},
             {"Raspberry Pi Camera Module 3", "12 MP • captures the peanut kernel images"},
@@ -66,7 +63,6 @@ public class SettingsActivity extends AppCompatActivity {
             setExpanded(R.id.specsContent, R.id.ivSpecsChevron, specsOpen);
         });
 
-        NavHelper.setup(this, findViewById(R.id.bottomNav), NavHelper.Tab.SETTINGS);
         NavHelper.handleBackToHome(this);
 
         playIntro();
@@ -108,7 +104,9 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void setExpanded(int contentId, int chevronId, boolean open) {
-        findViewById(contentId).setVisibility(open ? View.VISIBLE : View.GONE);
+        findViewById(contentId).setVisibility(
+                open ? View.VISIBLE : View.GONE
+        );
 
         findViewById(chevronId)
                 .animate()
@@ -134,7 +132,6 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
-    /** Cards fade/slide in one after another. */
     private void playIntro() {
         View[] cards = {
                 findViewById(R.id.cardSpecs),

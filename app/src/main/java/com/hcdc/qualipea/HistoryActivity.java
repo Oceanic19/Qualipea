@@ -72,6 +72,8 @@ public class HistoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
+        findViewById(R.id.btnHeaderSettings).setOnClickListener(v ->
+                startActivity(new Intent(HistoryActivity.this, SettingsActivity.class)));
 
         uid = FirebaseAuth.getInstance().getUid();
 

@@ -14,8 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -28,11 +28,11 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Intro animation plays only once per app launch.
     private static boolean introPlayed = false;
     private boolean statsIntroPending;
 
     private static final int MAX_RECENT = 1;
+    private static final int EMPTY_GRAY = 0xFFEADBC6;
 
     private View statusDot;
     private TextView tvDeviceStatus;
@@ -47,13 +47,12 @@ public class MainActivity extends AppCompatActivity {
     private View emptyRecent;
     private MaterialButton btnViewAllHistory;
 
-    private ValueAnimator scansAnim;
-    private ValueAnimator kernelsAnim;
-    private ValueAnimator barAnim;
     private View dotGood;
     private View dotDefect;
 
-    private static final int EMPTY_GRAY = 0xFFEADBC6;
+    private ValueAnimator scansAnim;
+    private ValueAnimator kernelsAnim;
+    private ValueAnimator barAnim;
 
     private final SimpleDateFormat dateFmt =
             new SimpleDateFormat("MMMM d, yyyy • h:mm a", Locale.getDefault());
@@ -65,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.btnHeaderSettings).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class)));
 
         // Exit confirmation.
         getOnBackPressedDispatcher().addCallback(this,
@@ -110,8 +111,8 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
 
-        // NEW: Set up the four independent reference image carousels.
-        setupReferenceCarousels();
+        // Peanut Reference Guide: accordion and carousels.
+        setupReferenceGuide();
 
         // Bottom navigation.
         NavHelper.setup(this, findViewById(R.id.bottomNav), NavHelper.Tab.HOME);
@@ -142,9 +143,9 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
     // Raspberry Pi connection
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
 
     private void checkPiConnection() {
         tvDeviceStatus.setText("Checking Raspberry Pi…");
@@ -161,18 +162,43 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // ------------------------------------------------------------------
-    // NEW: Peanut Quality Reference Guide carousels
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
+    // Peanut Quality Reference Guide
+    // ---------------------------------------------------------
 
-    private void setupReferenceCarousels() {
+    private void setupReferenceGuide() {
 
-        // Extra Class images.
+        // Accordion sections.
+        setupAccordion(
+                R.id.rowExtraHeader,
+                R.id.layoutExtraContent,
+                R.id.tvExtraArrow
+        );
+
+        setupAccordion(
+                R.id.rowClassOneHeader,
+                R.id.layoutClassOneContent,
+                R.id.tvClassOneArrow
+        );
+
+        setupAccordion(
+                R.id.rowClassTwoHeader,
+                R.id.layoutClassTwoContent,
+                R.id.tvClassTwoArrow
+        );
+
+        setupAccordion(
+                R.id.rowDefectedHeader,
+                R.id.layoutDefectedContent,
+                R.id.tvDefectedArrow
+        );
+
+        // Extra Class carousel.
         setupImageCarousel(
-                findViewById(R.id.ivExtraClass),
-                findViewById(R.id.tvExtraCounter),
-                findViewById(R.id.btnExtraPrev),
-                findViewById(R.id.btnExtraNext),
+                R.id.ivExtraClass,
+                R.id.tvExtraCounter,
+                R.id.btnExtraPrev,
+                R.id.btnExtraNext,
                 "Extra Class",
                 new int[]{
                         R.drawable.logo_peanut,
@@ -182,12 +208,12 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        // Class I images.
+        // Class I carousel.
         setupImageCarousel(
-                findViewById(R.id.ivClassOne),
-                findViewById(R.id.tvClassOneCounter),
-                findViewById(R.id.btnClassOnePrev),
-                findViewById(R.id.btnClassOneNext),
+                R.id.ivClassOne,
+                R.id.tvClassOneCounter,
+                R.id.btnClassOnePrev,
+                R.id.btnClassOneNext,
                 "Class I",
                 new int[]{
                         R.drawable.broken_kernel,
@@ -197,12 +223,12 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        // Class II images.
+        // Class II carousel.
         setupImageCarousel(
-                findViewById(R.id.ivClassTwo),
-                findViewById(R.id.tvClassTwoCounter),
-                findViewById(R.id.btnClassTwoPrev),
-                findViewById(R.id.btnClassTwoNext),
+                R.id.ivClassTwo,
+                R.id.tvClassTwoCounter,
+                R.id.btnClassTwoPrev,
+                R.id.btnClassTwoNext,
                 "Class II",
                 new int[]{
                         R.drawable.discolored_kernel,
@@ -212,12 +238,12 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        // Defected images.
+        // Defected carousel.
         setupImageCarousel(
-                findViewById(R.id.ivDefected),
-                findViewById(R.id.tvDefectedCounter),
-                findViewById(R.id.btnDefectedPrev),
-                findViewById(R.id.btnDefectedNext),
+                R.id.ivDefected,
+                R.id.tvDefectedCounter,
+                R.id.btnDefectedPrev,
+                R.id.btnDefectedNext,
                 "Defected",
                 new int[]{
                         R.drawable.defect_moldy,
@@ -229,22 +255,67 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Sets up one independent image carousel.
-     * Each call has its own current image index.
+     * Sets up one expandable section.
+     * Only one section can remain open at a time.
+     */
+    private void setupAccordion(int headerId, int contentId, int arrowId) {
+
+        View header = findViewById(headerId);
+        View content = findViewById(contentId);
+        TextView arrow = findViewById(arrowId);
+
+        header.setOnClickListener(v -> {
+
+            boolean shouldExpand =
+                    content.getVisibility() != View.VISIBLE;
+
+            // Close every section first.
+            closeAccordion(R.id.layoutExtraContent, R.id.tvExtraArrow);
+            closeAccordion(R.id.layoutClassOneContent, R.id.tvClassOneArrow);
+            closeAccordion(R.id.layoutClassTwoContent, R.id.tvClassTwoArrow);
+            closeAccordion(R.id.layoutDefectedContent, R.id.tvDefectedArrow);
+
+            // Open the selected section if it was previously closed.
+            if (shouldExpand) {
+                content.setVisibility(View.VISIBLE);
+                arrow.setText("⌃");
+            }
+        });
+    }
+
+    private void closeAccordion(int contentId, int arrowId) {
+
+        View content = findViewById(contentId);
+        TextView arrow = findViewById(arrowId);
+
+        content.setVisibility(View.GONE);
+        arrow.setText("⌄");
+    }
+
+    /**
+     * Sets up an independent image carousel.
+     * Tapping the image opens the existing full-screen zoom viewer.
      */
     private void setupImageCarousel(
-            ImageView imageView,
-            TextView counter,
-            MaterialButton previousButton,
-            MaterialButton nextButton,
+            int imageId,
+            int counterId,
+            int previousId,
+            int nextId,
             String category,
             int[] images) {
 
+        ImageView imageView = findViewById(imageId);
+        TextView counter = findViewById(counterId);
+        MaterialButton previousButton = findViewById(previousId);
+        MaterialButton nextButton = findViewById(nextId);
+
         final int[] currentIndex = {0};
 
-        // Displays the current image and counter.
         Runnable updateCarousel = () -> {
-            imageView.setImageResource(images[currentIndex[0]]);
+
+            int currentImage = images[currentIndex[0]];
+
+            imageView.setImageResource(currentImage);
 
             counter.setText(
                     (currentIndex[0] + 1) + "/" + images.length
@@ -254,11 +325,13 @@ public class MainActivity extends AppCompatActivity {
                     category + " sample image "
                             + (currentIndex[0] + 1)
                             + " of " + images.length
+                            + ". Tap to zoom."
             );
         };
 
         // Previous image.
         previousButton.setOnClickListener(v -> {
+
             currentIndex[0]--;
 
             if (currentIndex[0] < 0) {
@@ -270,6 +343,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Next image.
         nextButton.setOnClickListener(v -> {
+
             currentIndex[0]++;
 
             if (currentIndex[0] >= images.length) {
@@ -279,15 +353,24 @@ public class MainActivity extends AppCompatActivity {
             updateCarousel.run();
         });
 
-        // Show the first image initially.
+        // Open the current image in the existing zoom viewer.
+        imageView.setOnClickListener(v ->
+                ImageViewerOverlay.show(
+                        MainActivity.this,
+                        images[currentIndex[0]]
+                )
+        );
+
+        // Show the first image.
         updateCarousel.run();
     }
 
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
     // Database observation
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
 
     private void observeData() {
+
         String uid = FirebaseAuth.getInstance().getUid();
 
         if (uid == null) {
@@ -302,16 +385,16 @@ public class MainActivity extends AppCompatActivity {
         dao.observeRecent(uid).observe(this, this::renderRecent);
     }
 
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
     // Animations
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
 
     private float dp(int value) {
         return value * getResources().getDisplayMetrics().density;
     }
 
-    /** Cards fade in and slide up one after another. */
     private void playCardIntro() {
+
         View[] cards = {
                 findViewById(R.id.cardActivity),
                 findViewById(R.id.cardReferenceGuide),
@@ -322,6 +405,7 @@ public class MainActivity extends AppCompatActivity {
         float offset = dp(24);
 
         for (int i = 0; i < cards.length; i++) {
+
             View card = cards[i];
 
             card.setAlpha(0f);
@@ -337,7 +421,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /** Counts a number up from 0 to target. */
     private ValueAnimator countUp(
             TextView tv,
             int target,
@@ -346,74 +429,79 @@ public class MainActivity extends AppCompatActivity {
 
         tv.setText("0");
 
-        ValueAnimator a = ValueAnimator.ofInt(0, target);
-        a.setStartDelay(delay);
-        a.setDuration(duration);
-        a.setInterpolator(new DecelerateInterpolator());
+        ValueAnimator animator = ValueAnimator.ofInt(0, target);
+        animator.setStartDelay(delay);
+        animator.setDuration(duration);
+        animator.setInterpolator(new DecelerateInterpolator());
 
-        a.addUpdateListener(anim ->
-                tv.setText(num((Integer) anim.getAnimatedValue())));
+        animator.addUpdateListener(animation ->
+                tv.setText(num((Integer) animation.getAnimatedValue())));
 
-        a.start();
-        return a;
+        animator.start();
+
+        return animator;
     }
 
-    /** Reveals the good/defective bar from left to right. */
     private ValueAnimator growBar(long delay, long duration) {
+
         View bar = (View) barGood.getParent();
 
         bar.setClipBounds(new Rect(0, 0, 0, 0));
 
-        ValueAnimator a = ValueAnimator.ofFloat(0f, 1f);
-        a.setStartDelay(delay);
-        a.setDuration(duration);
-        a.setInterpolator(new DecelerateInterpolator());
+        ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);
+        animator.setStartDelay(delay);
+        animator.setDuration(duration);
+        animator.setInterpolator(new DecelerateInterpolator());
 
-        a.addUpdateListener(anim -> {
-            float f = (float) anim.getAnimatedValue();
+        animator.addUpdateListener(animation -> {
+
+            float fraction = (float) animation.getAnimatedValue();
 
             bar.setClipBounds(new Rect(
                     0,
                     0,
-                    Math.round(bar.getWidth() * f),
+                    Math.round(bar.getWidth() * fraction),
                     bar.getHeight()
             ));
         });
 
-        a.addListener(new AnimatorListenerAdapter() {
+        animator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
                 bar.setClipBounds(null);
             }
         });
 
-        a.start();
-        return a;
+        animator.start();
+
+        return animator;
     }
 
     private void cancelStatAnimators() {
+
         if (scansAnim != null) scansAnim.cancel();
         if (kernelsAnim != null) kernelsAnim.cancel();
         if (barAnim != null) barAnim.cancel();
     }
 
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
     // Your Activity
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
 
-    private String num(int n) {
-        return String.format(Locale.US, "%,d", n);
+    private String num(int number) {
+        return String.format(Locale.US, "%,d", number);
     }
 
-    private void setWeight(View v, float weight) {
-        LinearLayout.LayoutParams p =
-                (LinearLayout.LayoutParams) v.getLayoutParams();
+    private void setWeight(View view, float weight) {
 
-        p.weight = weight;
-        v.setLayoutParams(p);
+        LinearLayout.LayoutParams params =
+                (LinearLayout.LayoutParams) view.getLayoutParams();
+
+        params.weight = weight;
+        view.setLayoutParams(params);
     }
 
-    private void renderStats(ScanStats s) {
+    private void renderStats(ScanStats stats) {
 
         cancelStatAnimators();
 
@@ -424,11 +512,12 @@ public class MainActivity extends AppCompatActivity {
 
         activityBreakdown.setVisibility(View.VISIBLE);
 
-        boolean empty = s == null
-                || s.totalScans == 0
-                || (s.totalGood + s.totalDefects) == 0;
+        boolean empty = stats == null
+                || stats.totalScans == 0
+                || (stats.totalGood + stats.totalDefects) == 0;
 
         if (empty) {
+
             tvStatScans.setText("0");
             tvStatKernels.setText("0");
 
@@ -457,15 +546,15 @@ public class MainActivity extends AppCompatActivity {
         dotDefect.setBackgroundTintList(null);
 
         if (animate) {
-            scansAnim = countUp(tvStatScans, s.totalScans, 300, 1100);
-            kernelsAnim = countUp(tvStatKernels, s.totalKernels, 300, 1100);
+            scansAnim = countUp(tvStatScans, stats.totalScans, 300, 1100);
+            kernelsAnim = countUp(tvStatKernels, stats.totalKernels, 300, 1100);
         } else {
-            tvStatScans.setText(num(s.totalScans));
-            tvStatKernels.setText(num(s.totalKernels));
+            tvStatScans.setText(num(stats.totalScans));
+            tvStatKernels.setText(num(stats.totalKernels));
         }
 
-        int good = s.totalGood;
-        int bad = s.totalDefects;
+        int good = stats.totalGood;
+        int bad = stats.totalDefects;
 
         setWeight(barGood, good);
         setWeight(barDefect, bad);
@@ -485,15 +574,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
     // Recent Activity
-    // ------------------------------------------------------------------
+    // ---------------------------------------------------------
 
     private String scanLabel(int number) {
         return String.format(Locale.US, "Scan #%04d", number);
     }
 
     private int gradeColor(String grade) {
+
         if ("Reject".equalsIgnoreCase(grade)) {
             return getResources().getColor(R.color.delete_red);
         }
@@ -510,8 +600,10 @@ public class MainActivity extends AppCompatActivity {
         recentScansContainer.removeAllViews();
 
         if (scans == null || scans.isEmpty()) {
+
             emptyRecent.setVisibility(View.VISIBLE);
             btnViewAllHistory.setVisibility(View.INVISIBLE);
+
             return;
         }
 
@@ -523,7 +615,8 @@ public class MainActivity extends AppCompatActivity {
         int count = Math.min(scans.size(), MAX_RECENT);
 
         for (int i = 0; i < count; i++) {
-            ScanEntity e = scans.get(i);
+
+            ScanEntity entity = scans.get(i);
 
             View item = inflater.inflate(
                     R.layout.item_scan_home,
@@ -537,47 +630,49 @@ public class MainActivity extends AppCompatActivity {
             TextView tvGrade = item.findViewById(R.id.tvHomeGrade);
             TextView tvDate = item.findViewById(R.id.tvHomeDate);
 
-            String grade = e.grade != null ? e.grade : "Unknown";
+            String grade = entity.grade != null ? entity.grade : "Unknown";
             int color = gradeColor(grade);
 
             ivIcon.setColorFilter(color);
 
-            tvScanNumber.setText(scanLabel(e.scanNumber));
-            tvKernels.setText(e.total + " kernels");
+            tvScanNumber.setText(scanLabel(entity.scanNumber));
+            tvKernels.setText(entity.total + " kernels");
             tvGrade.setText(grade);
             tvGrade.setTextColor(color);
-            tvDate.setText(rowFmt.format(e.timestampMillis));
+            tvDate.setText(rowFmt.format(entity.timestampMillis));
 
             item.setContentDescription(
-                    "View details: " + scanLabel(e.scanNumber)
-                            + ", " + e.total + " kernels, "
+                    "View details: " + scanLabel(entity.scanNumber)
+                            + ", " + entity.total + " kernels, "
                             + grade + ", "
-                            + rowFmt.format(e.timestampMillis)
+                            + rowFmt.format(entity.timestampMillis)
             );
 
-            item.setOnClickListener(v -> openDetail(e));
+            item.setOnClickListener(v -> openDetail(entity));
 
             recentScansContainer.addView(item);
         }
     }
 
-    private void openDetail(ScanEntity e) {
+    private void openDetail(ScanEntity entity) {
 
         Intent intent = new Intent(this, ScanResultsActivity.class);
 
         intent.putExtra(ScanKeys.ALREADY_SAVED, true);
-        intent.putExtra(ScanKeys.DOC_ID, e.id);
-        intent.putExtra(ScanKeys.DATE, dateFmt.format(e.timestampMillis));
-        intent.putExtra(ScanKeys.TOTAL, e.total);
-        intent.putExtra(ScanKeys.GOOD, e.good);
-        intent.putExtra(ScanKeys.DEFECT, e.defect);
-        intent.putExtra(ScanKeys.DEFECT_RATE, e.defectRate);
+        intent.putExtra(ScanKeys.DOC_ID, entity.id);
+        intent.putExtra(ScanKeys.DATE, dateFmt.format(entity.timestampMillis));
+        intent.putExtra(ScanKeys.TOTAL, entity.total);
+        intent.putExtra(ScanKeys.GOOD, entity.good);
+        intent.putExtra(ScanKeys.DEFECT, entity.defect);
+        intent.putExtra(ScanKeys.DEFECT_RATE, entity.defectRate);
+
         intent.putExtra(
                 ScanKeys.GRADE,
-                e.grade != null ? e.grade : "Unknown"
+                entity.grade != null ? entity.grade : "Unknown"
         );
-        intent.putExtra(ScanKeys.INFERENCE_TIME, e.inferenceTime);
-        intent.putExtra(ScanKeys.SCAN_NUMBER, e.scanNumber);
+
+        intent.putExtra(ScanKeys.INFERENCE_TIME, entity.inferenceTime);
+        intent.putExtra(ScanKeys.SCAN_NUMBER, entity.scanNumber);
 
         startActivity(intent);
     }

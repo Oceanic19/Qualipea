@@ -6,6 +6,8 @@
     android:orientation="vertical"
     android:background="@color/cream_bg">
 
+    <include layout="@layout/header" />
+
     <ScrollView
         android:id="@+id/historyScroll"
         android:layout_width="match_parent"
@@ -35,7 +37,6 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Filter chips -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -89,14 +90,12 @@
                     android:focusable="true" />
             </LinearLayout>
 
-            <!-- Scan list (mock data) -->
             <LinearLayout
                 android:id="@+id/scanListContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
 
-            <!-- Empty state -->
             <LinearLayout
                 android:id="@+id/emptyState"
                 android:layout_width="match_parent"
@@ -133,6 +132,8 @@
         </LinearLayout>
     </ScrollView>
 
-    <include layout="@layout/bottom_nav" android:id="@+id/bottomNav" />
+    <include
+        android:id="@+id/bottomNav"
+        layout="@layout/bottom_nav" />
 
 </LinearLayout>
